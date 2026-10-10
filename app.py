@@ -36,7 +36,7 @@ with st.sidebar:
                                                       help="Get a free key at aistudio.google.com. It is used only for this session.")
     with st.expander("Advanced"):
         base_url = st.text_input("Base URL", secret("LLM_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/"))
-        model = st.text_input("Model", secret("MODEL_NAME", "gemini-2.5-flash"))
+        model = st.text_input("Model", secret("MODEL_NAME", "gemini-3.8-flash"))
     st.caption("Without a key the app uses transparent Python rules. With a key, the Strategist and Manager agents use an LLM, "
                "but numbers are always computed by Python and checked by the Manager.")
 
